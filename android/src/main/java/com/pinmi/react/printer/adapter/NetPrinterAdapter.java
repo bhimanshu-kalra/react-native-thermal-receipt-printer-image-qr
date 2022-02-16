@@ -355,10 +355,7 @@ public class NetPrinterAdapter implements PrinterAdapter {
         }
     }
 
-    public static int[][] getPixelsSlow(Bitmap image2) {
-
-        Bitmap image = resizeTheImageForPrinting(image2);
-
+    public static int[][] getPixelsSlow(Bitmap image) {
         int width = image.getWidth();
         int height = image.getHeight();
         int[][] result = new int[height][width];
